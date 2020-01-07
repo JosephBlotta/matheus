@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.start {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  background: black;
+}
+
+nav {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: end;
+}
+
+.navigation li {
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left: 2vw;
+  margin-right: 1rem;
+  font-size: 1.5em;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+}
+
+.mainName {
+  padding: .5rem;
+  margin-left: 2rem;
+  font-size: 2.5em;
+  letter-spacing: -2px;
+}
+
+.mainName img {
+  height: 7vh;
+  padding-left: 1rem;
+  margin-bottom: -10px;
+}
+
+.images {
+  margin-top: 1vh;
+  padding-left: 1rem;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.images img {
+  width: 31vw;
+}
+
+@media (max-width: 1008px) {
+  html {
+    font-size: 12px;
+  }
+  .navigation li {
+    padding-left: 1vw;
+  }
+}
+
+@media (max-width: 820px) {
+  html {
+    font-size: 8px;
+  }
+  .navigation li {
+    padding-left: .25vw;
+  }
+  .images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .images img {
+    width: 80vw;
+    padding: 1rem;
+  }
+}
+
+.history {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/ID05D65EBF_EAD9_409D_B797_6376.jpg);
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 4vw;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+table {
+  margin-top: .5vh;
+  padding: 20px;
+  background-color: rgba(112, 112, 112, 0.7);
+  border-radius: 20px;
+  width: 90vw;
+  min-height: 80vh;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.5rem;
+  -webkit-box-shadow: 15px 15px 30px black;
+          box-shadow: 15px 15px 30px black;
+}
+
+table td {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+table img {
+  max-width: 7vw;
+  margin-bottom: -20px;
+}
+
+table img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.back {
+  margin-right: 4vw;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+}
+
+.setpieces {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/ID05D65EBF_EAD9_409D_B797_6376.jpg);
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.freestyle {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/ID05D65EBF_EAD9_409D_B797_6376.jpg);
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.highlights {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/ID05D65EBF_EAD9_409D_B797_6376.jpg);
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.videos {
+  margin-top: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.videos a {
+  text-decoration: none;
+}
+
+.videos .video {
+  width: 22vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  min-height: 80vh;
+  background-color: #707070;
+  border-radius: 20px 0 20px 0;
+  -webkit-box-shadow: 15px 15px 30px black;
+          box-shadow: 15px 15px 30px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.videos .videofreestyle {
+  width: 44vw;
+  margin-right: 2.5vw;
+  margin-left: 2vw;
+  height: 77vh;
+  border-radius: 20px 0 20px 0;
+  -webkit-box-shadow: 15px 15px 30px black;
+          box-shadow: 15px 15px 30px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  text-align: start;
+}
+
+.videos .videofreestyle video {
+  border-radius: 20px 0 20px 0;
+  width: 100%;
+  height: auto;
+}
+
+.videos .videofreestyle p {
+  padding: 0rem 5rem 0rem;
+  line-height: 1.6;
+}
+
+#freestyletext {
+  opacity: .7;
+  background-color: #707070;
+}
+
+#sp1 {
+  background-image: url(../images/FreeKick@2x.png);
+  background-size: cover;
+}
+
+#sp2 {
+  background-image: url(../images/CornerKick@2x.png);
+  background-size: cover;
+}
+
+#sp3 {
+  background-image: url(../images/Thrown_In@2x.png);
+  background-size: cover;
+}
+
+#sp4 {
+  background-image: url(../images/PenaltKick@2x.png);
+  background-size: cover;
+}
+
+#hl1 {
+  background-image: url(../images/FreeKick@2x.png);
+  background-size: cover;
+}
+
+#hl2 {
+  background-image: url(../images/CornerKick@2x.png);
+  background-size: cover;
+}
+
+#hl3 {
+  background-image: url(../images/Thrown_In@2x.png);
+  background-size: cover;
+}
+
+#hl4 {
+  background-image: url(../images/PenaltKick@2x.png);
+  background-size: cover;
+}
+
+@media (max-width: 820px) {
+  .videos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .videos .video {
+    margin: 2rem;
+    width: 70vw;
+    font-size: 7rem;
+    text-shadow: 2px 2px black;
+  }
+  .videos .videofreestyle {
+    margin: 2rem;
+    width: 70vw;
+    height: 77vh;
+  }
+  .videos .videofreestyle p {
+    line-height: 1.4;
+    font-size: 3rem;
+    padding: 0rem 9rem 0rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .videos .videofreestyle {
+    height: 68vh;
+  }
+  .videos .videofreestyle p {
+    font-size: 2.2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
