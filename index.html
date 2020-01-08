@@ -32,51 +32,57 @@
     <table>
         <tr>
             <th></th>
-            <th>Games</th>
-            <th>Titles</th>
-            <th>Tournaments</th>
+            <th>Time</th>
+            <th>Goals</th>
+            <th>Positions</th>
+            <th>Accomplishments</th>
             <th>Coach</th>
-            <th>Seasons</th>
         </tr>
         <tr>
-            <td><img src="./images/TOR15_Primary_ba@2x.png" alt="TOR"></td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
+            <td><img src="./images/TOR15_Primary_ba@2x.png" alt="Toronto Youth FC"></td>
+            <td>2018 - 2019</td>
+            <td>24</td>
+            <td>CAM, CM</td>
+            <td>Dallas Cup invitational, <br>
+                Showcase, <br>
+                New Jersey showcase 2nd place, <br>
+                Portugal travel showcase, <br>
+                OSA Provincial Champs</td>
+            <td>Brian Annin</td>
         </tr>
         <tr>
-            <td><img src="./images/ID1200px_SL_Benfica_logo_svg@2x.png" alt="TOR"></td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
+            <td><img src="./images/EYSC@2x.png" alt="East York"></td>
+            <td>2017-2018</td>
+            <td>32</td>
+            <td>CAM</td>
+            <td>Ontario Cup 7th place</td>
+            <td>Tony</td>
         </tr>
         <tr>
-            <td><img src="./images/BSA_SHIELD_Recovered_small@2x.png" alt="TOR"></td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
+            <td><img src="./images/ID1200px_SL_Benfica_logo_svg@2x.png" alt="Benfica"></td>
+            <td>2015-2017</td>
+            <td>57</td>
+            <td>CAM, LW</td>
+            <td>Ottawa Showcase x2</td>
+            <td>Joao Oliveira</td>
         </tr>
         <tr>
-            <td><img src="./images/SCToronto@2x.png" alt="TOR"></td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
+            <td><img src="./images/BSA_SHIELD_Recovered_small@2x.png" alt="Brasilian Soccer Academy"></td>
+            <td>2010-2015</td>
+            <td>187</td>
+            <td>CAM,LW,RW</td>
+            <td>Montreal showcase 2014,<br>
+                Futsal Champions, <br>
+                League champions x3</td>
+            <td>Rafael</td>
         </tr>
         <tr>
-            <td><img src="./images/EYSC@2x.png" alt="TOR"></td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
-            <td>12</td>
+            <td><img src="./images/SCToronto@2x.png" alt="SC Toronto"></td>
+            <td>2007-2010</td>
+            <td>65</td>
+            <td>CAM, CM</td>
+            <td>CSL league champs x2</td>
+            <td>Brian Annin</td>
         </tr>
     </table>
 </div>
@@ -100,11 +106,14 @@
     <div class="videos">
         <a href=""><div class="videofreestyle" id="freestyletext"><p>Freestyle football, also known as freestyle soccer in North America, is the art of self-expression through creatively juggling a football using any parts of the body. It combines football tricks, dance, acrobatics and music to entertain onlookers and compete with opponents. … It is not a renowned football sport.</p></div></a>
         <a href=""><div class="videofreestyle">
-            <video width="560" height="560" autoplay loop>
+            <video width="560" height="560" autoplay loop id="vid">
                 <source src="./video/video.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
               </video>
+              <script>
+                document.getElementById('vid').play();
+            </script>
         </div></a>
     </div>
 </div>
