@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matheus Almeida</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="start" id="start">
@@ -41,10 +42,10 @@
         <tr>
             <td><img src="./images/TOR15_Primary_ba@2x.png" alt="Toronto Youth FC"></td>
             <td>2018 - 2019</td>
-            <td>24</td>
+            <td class="goal">24</td>
             <td>CAM, CM</td>
             <td>Dallas Cup invitational, <br>
-                Showcase, <br>
+                Indiana Showcase, <br>
                 New Jersey showcase 2nd place, <br>
                 Portugal travel showcase, <br>
                 OSA Provincial Champs</td>
@@ -53,7 +54,7 @@
         <tr>
             <td><img src="./images/EYSC@2x.png" alt="East York"></td>
             <td>2017-2018</td>
-            <td>32</td>
+            <td class="goal">32</td>
             <td>CAM</td>
             <td>Ontario Cup 7th place</td>
             <td>Tony</td>
@@ -61,7 +62,7 @@
         <tr>
             <td><img src="./images/ID1200px_SL_Benfica_logo_svg@2x.png" alt="Benfica"></td>
             <td>2015-2017</td>
-            <td>57</td>
+            <td class="goal">57</td>
             <td>CAM, LW</td>
             <td>Ottawa Showcase x2</td>
             <td>Joao Oliveira</td>
@@ -69,8 +70,8 @@
         <tr>
             <td><img src="./images/BSA_SHIELD_Recovered_small@2x.png" alt="Brasilian Soccer Academy"></td>
             <td>2010-2015</td>
-            <td>187</td>
-            <td>CAM,LW,RW</td>
+            <td class="goal">187</td>
+            <td>CAM, LW, RW</td>
             <td>Montreal showcase 2014,<br>
                 Futsal Champions, <br>
                 League champions x3</td>
@@ -79,7 +80,7 @@
         <tr>
             <td><img src="./images/SCToronto@2x.png" alt="SC Toronto"></td>
             <td>2007-2010</td>
-            <td>65</td>
+            <td class="goal">65</td>
             <td>CAM, CM</td>
             <td>CSL league champs x2</td>
             <td>Brian Annin</td>
@@ -92,10 +93,10 @@
         <a class="back" href="#start"><</a>
     </nav>
     <div class="videos">
-        <a href=""><div class="video" id="sp1">Free-Kick</div></a>
-        <a href=""><div class="video" id="sp2">Corner-Kick</div></a>
-        <a href=""><div class="video" id="sp3">Throw-in</div></a>
-        <a href=""><div class="video" id="sp4">Penalty-Kick</div></a>
+        <a class="openpop" href="https://www.youtube.com/embed/v95o99YNJL0"><div class="video" id="sp1">Free-Kick</div></a>
+        <a class="openpop" href="https://www.youtube.com/embed/35RZxj4e6kY"><div class="video" id="sp2">Corner-Kick</div></a>
+        <a class="openpop" href="https://www.youtube.com/embed/hYtLFBPZRzM"><div class="video" id="sp3">Throw-in</div></a>
+        <a class="openpop" href="https://www.youtube.com/embed/BpdVxlawP6Q"><div class="video" id="sp4">Penalty-Kick</div></a>
     </div>
 </div>
 <div class="freestyle" id="freestyle">
@@ -104,17 +105,14 @@
         <a class="back" href="#start"><</a>
     </nav>
     <div class="videos">
-        <a href=""><div class="videofreestyle" id="freestyletext"><p>Freestyle football, also known as freestyle soccer in North America, is the art of self-expression through creatively juggling a football using any parts of the body. It combines football tricks, dance, acrobatics and music to entertain onlookers and compete with opponents. … It is not a renowned football sport.</p></div></a>
-        <a href=""><div class="videofreestyle">
-            <video width="560" height="560" autoplay loop id="vid">
+        <div class="videofreestyle" id="freestyletext"><p>Freestyle football, also known as freestyle soccer in North America, is the art of self-expression through creatively juggling a football using any parts of the body. It combines football tricks, dance, acrobatics and music to entertain onlookers and compete with opponents. … It is not a renowned football sport.</p></div>
+        <div class="videofreestyle">
+            <video width="560" height="560" autoplay muted loop id="vid">
                 <source src="./video/video.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
               </video>
-              <script>
-                document.getElementById('vid').play();
-            </script>
-        </div></a>
+        </div>
     </div>
 </div>
 <div class="highlights" id="highlights">
@@ -129,5 +127,26 @@
         <a href=""><div class="video" id="hl4">Penalty-Kick</div></a>
     </div>
 </div>
+<div class="displayvideo">
+    <iframe width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
+    <div class="close">X</div>
+</div>
+<script>
+    $(document).ready(function () {
+    $(".displayvideo").hide();
+    $(".openpop").click(function (e) {
+        e.preventDefault();
+        $(".displayvideo").fadeIn('slow');
+        $(".displayvideo").width("100%");
+        $("iframe").attr("src", $(this).attr('href'));
+    });
+
+    $(".close").click(function () {
+        $(this).parent().fadeOut("slow");
+        $(".displayvideo").width('0%');
+        $('iframe').attr('src', $('iframe').attr('src'));
+    });
+});
+</script>
 </body>
 </html>
