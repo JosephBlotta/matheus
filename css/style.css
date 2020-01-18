@@ -94,7 +94,7 @@ nav {
   width: 31vw;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1080px) {
   html {
     font-size: 12px;
   }
