@@ -301,10 +301,9 @@ table img:hover {
 
 .highlights {
   padding: 0;
-  padding-top: 4vh;
   margin: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   color: white;
   background-image: url(../images/ID05D65EBF_EAD9_409D_B797_6376.jpg);
   background-size: cover;
