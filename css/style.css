@@ -301,17 +301,11 @@ table img:hover {
 
 .highlights {
   padding: 0;
+  padding-top: 4vh;
   margin: 0;
   width: 100vw;
   min-height: 100vh;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-image: url(../images/ID05D65EBF_EAD9_409D_B797_6376.jpg);
   background-size: cover;
   -webkit-box-align: center;
@@ -417,22 +411,62 @@ table img:hover {
 }
 
 #hl1 {
-  background-image: url(../images/FreeKick@2x.png);
+  background-image: url("https://img.youtube.com/vi/MWMAXoncsWs/default.jpg");
   background-size: cover;
 }
 
 #hl2 {
-  background-image: url(../images/CornerKick@2x.png);
+  background-image: url("https://img.youtube.com/vi/lwd6wRxhcCk/default.jpg");
   background-size: cover;
 }
 
 #hl3 {
-  background-image: url(../images/Thrown_In@2x.png);
+  background-image: url("https://img.youtube.com/vi/Smmy7NjiHLc/default.jpg");
   background-size: cover;
 }
 
 #hl4 {
-  background-image: url(../images/PenaltKick@2x.png);
+  background-image: url("https://img.youtube.com/vi/h1-UT4Ro1Lk/default.jpg");
+  background-size: cover;
+}
+
+#hl5 {
+  background-image: url("https://img.youtube.com/vi/YJEiS3ge1fI/default.jpg");
+  background-size: cover;
+}
+
+#hl6 {
+  background-image: url("https://img.youtube.com/vi/Y1VHuV7v0WM/default.jpg");
+  background-size: cover;
+}
+
+#hl7 {
+  background-image: url("https://img.youtube.com/vi/SHhRqLMqRuQ/default.jpg");
+  background-size: cover;
+}
+
+#hl8 {
+  background-image: url("https://img.youtube.com/vi/mR6o52O90As/default.jpg");
+  background-size: cover;
+}
+
+#hl9 {
+  background-image: url("https://img.youtube.com/vi/69vY3TXZ7GI/default.jpg");
+  background-size: cover;
+}
+
+#hl10 {
+  background-image: url("https://img.youtube.com/vi/oYA7s4N4x-I/default.jpg");
+  background-size: cover;
+}
+
+#hl11 {
+  background-image: url("https://img.youtube.com/vi/fAal-4Nt4j8/default.jpg");
+  background-size: cover;
+}
+
+#hl12 {
+  background-image: url("https://img.youtube.com/vi/xGPDB7F3yPY/default.jpg");
   background-size: cover;
 }
 
@@ -507,5 +541,95 @@ table img:hover {
   position: absolute;
   top: 8px;
   right: 16px;
+}
+
+.highlight1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.highlight2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.highlight3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.highlight4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: four;
+}
+
+.highlight5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: five;
+}
+
+.highlight6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: six;
+}
+
+.highlight7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: seven;
+}
+
+.highlight8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: eight;
+}
+
+.highlight9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nine;
+}
+
+.highlight10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: ten;
+}
+
+.highlight11 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: eleven;
+}
+
+.highlight12 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: twelve;
+}
+
+.highlightsGroup {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'one two three four' 'five six seven eight' 'nine ten eleven twelve';
+  grid-gap: 16px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vw;
+}
+
+.highlightsGroup div {
+  height: 23vh;
+  padding: 10px;
+  border-radius: 20px 0 20px 0;
+  -webkit-box-shadow: 15px 15px 30px black;
+          box-shadow: 15px 15px 30px black;
 }
 /*# sourceMappingURL=style.css.map */
